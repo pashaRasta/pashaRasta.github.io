@@ -1,0 +1,511 @@
+
+//css reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background: #f9f9f9;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//Mixins and var`s
+$borderR20: 20px;
+$colorPink: #ff7f8e;
+$colorGray: #989898;
+$colorRed: #fb5150;
+
+//группировка ширины контента по классу
+.content{
+    max-width: 1108px;  
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    hr{
+        width: 100%;
+    }
+}
+//переключатель
+.active{
+    display: block!important;
+    transition: 0.4s ease-in;
+}
+//ваключатель
+.dispNone{
+    display: none;
+    transition: 0.4s ease-in;
+}
+// стиль кнопки pink
+.request-btn{
+    padding: 12px 18px;
+    background: $colorPink;
+    border: none;
+    color: #ffffff;
+    border-radius: $borderR20;
+    &:hover{
+        cursor: pointer;
+$colorRed: #fb5150;
+        background-color: $colorRed;
+        transition: 0.4s ease-in;
+        -webkit-box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
+        -moz-box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
+        box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
+    }
+    &:active{
+        border:none;
+    }
+}
+//текст в шапке каждого блока
+.block-header-text{
+    color: #FFFFFF;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+    }
+//header menu logo info
+.header-info{
+    background-color: #ffffff;
+    padding-top: 10px;
+    .logo{
+        background: url('../img/Logo 1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 92px;
+        width: 95px;
+        display: block;
+    }
+    .header_top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 114px;
+        .top_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            form{
+                width: 60%;
+                display: flex;
+                .show_search_input{
+                    width: 23px;
+                    height: 25px;
+                    background:url('../img/header/search.png');
+                    background-size: cover;
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                }
+                input[type=text]{
+                    display: none;
+                    width: 76%;
+                    border-radius: 20px;
+                    background: $colorPink;
+                    padding-left: 10px;
+                    margin-right: 10px;
+                    color: #ffffff;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                }
+                input[type=submit]{
+                    background:url('../img/header/search.png');
+                    background-size: cover;
+                    border: none;
+                    width: 23px;
+                    height: 25px;
+                    margin-right: 10px;
+                    display: none;
+                }
+            }
+
+            .socual_icons{
+                display: flex;
+                justify-content: space-around;
+                width: 102px;
+                span{
+                    a{
+                        height: 27px;
+                        width: 27px;
+                        display: block;
+                        background-repeat:no-repeat;
+                        background-size: contain;
+                    }
+                    &:nth-child(1){
+                        background: url('../img/header/vk-social-logotype%201.svg');
+                    }
+                    &:nth-child(2){
+                        background: url('../img/header/facebook%201.svg');
+                    }
+                    &:nth-child(3){
+                        background: url('../img/header/instagram\ 1.svg');
+                    }
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+            }
+            .log_in_out{
+                a{
+                    height: auto;
+                    width: 100%;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 180px;
+                        img{
+                            // background-image: url('../img/header/user.svg');
+                            background-size: contain;
+                            width: 26px;
+                            height: 26px;
+                            margin-right: 8px;
+                        }
+                        p{
+                            color:$colorPink;
+                            font-weight: 100;
+                            font-size: 15px;
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom_info{
+            //color: $colorGray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .call_phone{
+                span{
+                    color: $colorGray;
+                }
+                a{
+                    display: block;
+                    color:#000000;
+                }
+
+            }
+            .delivery_info{
+                color: $colorGray;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 8px;
+                }
+
+            }
+            // .request_call{
+            // }
+        }
+    }
+}
+.header-info{
+    .header_bottom{
+        background-color:$colorPink;
+        justify-content: space-between;
+        }
+    .menu_wrapp_btn{
+        color:#FFFFFF;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-right: 1px solid #ffffff;
+        padding-right: 12px;
+        span{
+            width: 23px;
+            height: 20px;
+            background:url('../img/header/list\ 1.png');
+            background-size: cover;
+
+        }
+        p{
+            display: block;
+            margin-left: 8px;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                padding: 21px 8px;
+
+                a{
+                    color: #ffffff;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+//modal window menu + svg
+
+.left_menu{
+    position: absolute;
+    top: 82px;
+    left: 10px;
+    z-index: 3;
+    @media screen and(max-width:400px) {
+        top:126px;  
+    }
+    ul{
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(152,152,152,1);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(152,152,152,1);
+        box-shadow: 0px 0px 16px 0px rgba(152,152,152,1);
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                color:#000000;
+                background: #FFFFFF;
+                width: 231px;
+                border-bottom: 1px solid $colorGray;
+                padding:10px 12px;
+                transition: 0.2s;
+                font-weight: 100;   
+                &:hover{
+                    background-color: $colorPink;
+                    color:#FFFFFF;
+                    svg{ 
+                         path{
+                            fill: rgb(255, 255, 255);
+                            stroke-width: 22px;
+                        }
+                    }
+                }
+                svg{
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+//modal window menu +svg :end
+
+.my_shop{
+    border-left: 1px solid #ffffff;
+    align-items: center;
+    display: flex;
+    a{
+        padding: 0 10px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    img{
+        
+    margin-right: 10px;
+
+    }
+    p{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 100;
+        @media screen and (max-width:  340px ){
+            font-size: 12px;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+}
+}
+.content{
+    position: relative;
+    .bg_elem1{
+        position: absolute;
+        z-index: 2;
+        left: -8%;
+        top: 39%;
+        @media screen and (max-width:1200px) {
+            display: none;
+            
+        }
+    }
+    .bg_elem2{
+        position: absolute;
+        right: -18%;
+        top: 10%;
+        @media screen and (max-width:1200px) {
+            display: none;
+            
+        }
+    }
+}
+//  секция с swiper сдайдером
+.swiper_block{
+    margin-bottom: 30px;
+    margin-top: 25px;
+    .advertising_part{
+        width: 26%;
+        @media screen and (min-width:200px) and (max-width:1200px) {
+                width: 0;
+            
+        }
+       
+    }
+    .request-btn{
+        position: absolute;
+        width: 160px;
+        top: 54%;
+        left: 15%;
+        text-align: center;
+
+    }
+    .swiper-logo{
+        top: 26%;
+        left: 15%;
+        position: absolute;
+        @media only screen and (max-width:600px) {
+           font-size: 22px;
+        }
+    }
+    .swiper-text{
+        color:#FFFFFF;
+        font-size: 17px;
+        position: absolute;
+        top: 38%;
+        left: 15%;
+        line-height: 28px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        @media only screen and (max-width:600px) {
+            line-height: 18px;
+         }
+
+    }
+}
+//блок рекомендаций 
+.recommendation{
+    margin-bottom: 30px;
+    margin-top: 25px;
+    text-align: center;
+    flex-direction: column;
+    .block-header-text{
+        color:#000000;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
+.card_wrapper{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    .product-item{
+        //width: 22%;
+        width: 255px;       
+        background: #FFFFFF;
+        margin: 12px auto;
+        .product-img{
+            a{
+                display: flex;
+                justify-content: center;
+                height: 154px;
+            img{
+                display: block;
+            }
+            }
+        }
+    }
+    .product-list{
+        padding: 0 16px 20px 16px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .header-info nav ul{
+        flex-wrap: wrap;
+    }
+    .header-info .header_top{
+        margin-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 920px) {
+    .header-info nav ul li{
+        padding: 8px 8px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 1199px) {
+    .header-info .menu_wrapp_btn span{
+        margin-left: 12px;
+    }
+    .header-info .header_top .top_info .log_in_out a span{
+        margin: 10px 0;
+    }
+}
+
+@media screen  and (max-width: 600px) {
+    .header-info .header_top .top_info{
+        flex-wrap: wrap;
+        
+    }
+    
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 200px) and (max-width: 768px) {
+    .header-info .header_top .bottom_info{
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}

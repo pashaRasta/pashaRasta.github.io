@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+	<form>
+		<input type="range" name="amountRange" min="0" max="100" value="0" oninput="this.form.amountInput.value=this.value" />
+		<input type="number" id="outputNumber" class="outputNumber" name="amountInput" min="0" max="100" value="0" oninput="this.form.amountRange.value=this.value" />
+	</form>	
+
+	<div class="resoult">
+		<button id="btn">посчитать</button>
+		<div id="serchNamber">0</div>
+	</div>
+
+
+	<script  src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
