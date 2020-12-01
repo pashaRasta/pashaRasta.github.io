@@ -24,6 +24,14 @@ time, mark, audio, video {
     vertical-align: baseline;
     font-family: 'Roboto Slab', serif;
     color: $colorText;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -71,6 +79,10 @@ section{
         font-weight: 700;
         letter-spacing: -1px;
         line-height: 32px;
+        @media screen and (max-width:420px) {
+            margin-top: 10px;
+
+        }
     }
     .header_person{
         margin: 0 10px;
@@ -179,22 +191,25 @@ section{
     left: 24%;
     background-image: url('../img/curcle.png');
     background-size:cover;
+    @media screen and (max-width:980px){
+        left: 27%;
+    }
+    // @media screen and (max-width:420px){
+    //     left: 27%;
+    // }
    
 }
 .wave1{
     width: 124px;
     height: 120px;
-    animation: wave 10s linear infinite;
+    animation: wave 11s linear infinite;
     opacity: 0.3;
     @media screen and (min-width:1046px){
         top: 20%;
         left: 28%;
     }
-    @media screen and (max-width:1046px){
-         left: 28%;
-    }
-    @media screen and (max-width:526px){
-        top: 19%;
+    @media screen and (max-width:420px){
+        left: 32%;
     }
 } 
  .wave2{
@@ -204,16 +219,21 @@ section{
     left: 31%;
     top: 25%;
     opacity: 0.4;
-
+    @media screen and (max-width:420px){
+        left: 35%;
+    }
 }
 
 .wave3{
     height: 80px;
     width: 84px;
-    animation: wave 10s linear infinite;
+    animation: wave 9s linear infinite;
     left: 35%;
     top: 30%;
     opacity: 0.7;
+    @media screen and (max-width:420px){
+        left: 38%;
+    }
 }
 //круговое вращение
 @keyframes wave {

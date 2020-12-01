@@ -6,7 +6,7 @@ $(document).ready(function(){
     if($(window).width()< 768){
         slidesToShow = 2;//количество слайдов
     }
-    if($(window).width()< 375){
+    if($(window).width()< 486){
         slidesToShow = 1;//количество слайдов
     }
     let position = 0;
