@@ -58,3 +58,15 @@ $(document).ready(function(){
  
     checkBtns();
  });
+
+ document.getElementById("mybtn").onclick = function(){
+ 
+       let myaudio = document.getElementById("myaudio");
+
+       if(myaudio.paused == true){
+         document.getElementById("myaudio").play();
+       }else if (myaudio.paused == false){
+           document.getElementById("myaudio").pause();
+        }
+}
+ 
