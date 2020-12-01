@@ -32,5 +32,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 .then(() => {bindAccordionItem()});
         })
     })
+
+  
+
+
 })
 
