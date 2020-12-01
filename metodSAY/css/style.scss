@@ -215,7 +215,7 @@ section{
  .wave2{
      width: 104px;
      height: 100px;
-    animation: wave 10s linear infinite;
+    animation: waveRevers 10s linear infinite;
     left: 31%;
     top: 25%;
     opacity: 0.4;
@@ -239,6 +239,11 @@ section{
 @keyframes wave {
     100% {
        transform: rotate(360deg);
+    }
+}
+@keyframes waveRevers {
+    100% {
+       transform: rotate(-360deg);
     }
 }
 /////////////
