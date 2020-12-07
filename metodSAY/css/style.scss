@@ -136,7 +136,10 @@ section{
     align-items: center;
     text-align: center;
        .slider-item{
-           min-width: 240px;
+           //min-width: 240px;
+           @media screen and (min-width: 200px) and (max-width: 1040px) {
+               min-width: 282px;
+           }
        }
    }
 }
@@ -190,15 +193,13 @@ section{
 .wave1, .wave2,.wave3{
     position: absolute;
     top: 20%;
-    left: 24%;
-    background-image: url('../img/curcle.png');
+    left: 28%;
+    //background-image: url('../img/curcle.png');
     background-size:cover;
-    @media screen and (max-width:980px){
-        left: 27%;
-    }
-    // @media screen and (max-width:420px){
-    //     left: 27%;
-    // }
+    border: 3px solid red;
+        @media screen and (max-width:980px){
+            
+        }
    
 }
 .wave1{
@@ -206,24 +207,20 @@ section{
     height: 120px;
     animation: wave 11s linear infinite;
     opacity: 0.3;
-    @media screen and (min-width:1046px){
-        top: 20%;
-        left: 28%;
-    }
-    @media screen and (max-width:420px){
-        left: 32%;
-    }
+        @media screen and (min-width:200px) and (max-width:800px){
+            left: 28%;
+        }
 } 
  .wave2{
-     width: 104px;
-     height: 100px;
+    width: 104px;
+    height: 100px;
     animation: waveRevers 10s linear infinite;
     left: 31%;
     top: 25%;
     opacity: 0.4;
-    @media screen and (max-width:420px){
-        left: 35%;
-    }
+        @media screen and (min-width:200px) and (max-width:800px){
+            left: 32%; 
+        }
 }
 
 .wave3{
@@ -233,10 +230,34 @@ section{
     left: 35%;
     top: 30%;
     opacity: 0.7;
-    @media screen and (max-width:420px){
-        left: 38%;
-    }
+        @media screen and (min-width:760px) and (max-width:800px){
+            left: 31%;
+            
+        }
+        @media screen and (min-width:200px) and (max-width:7600px){
+            left: 35%;
+            
+        }
 }
+////media Wave
+@media screen and (max-width: 200px) and (min-width: 640px){
+    .wave1 {
+        left: 27%;
+    }
+    }
+    
+    @media screen and (max-width: 200px) and (min-width: 640px){
+    .wave2 {
+        left: 32%;
+    }
+    }
+    
+    @media screen and (max-width: 200px) and (min-width: 640px){
+        .wave3 {
+            left: 34%;
+        }
+    }
+    
 //круговое вращение
 @keyframes wave {
     100% {
