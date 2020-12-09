@@ -138,7 +138,8 @@ section{
        .slider-item{
            //min-width: 240px;
            @media screen and (min-width: 200px) and (max-width: 1040px) {
-               min-width: 282px;
+               min-width: 382px;
+               width: 386px;
            }
        }
    }
@@ -194,22 +195,32 @@ section{
     position: absolute;
     top: 20%;
     left: 28%;
-    //background-image: url('../img/curcle.png');
+    background-image: url('../img/curcle.png');
     background-size:cover;
-    border: 3px solid red;
-        @media screen and (max-width:980px){
-            
-        }
-   
+    // border: 3px solid red;
 }
 .wave1{
     width: 124px;
     height: 120px;
     animation: wave 11s linear infinite;
     opacity: 0.3;
-        @media screen and (min-width:200px) and (max-width:800px){
-            left: 28%;
+        @media screen and (min-width:768px) and (max-width:800px){
+            left: 24%;
         }
+        @media screen and (min-width: 624px) and (max-width: 768px){
+            left: 27%;
+        }
+        @media screen and (min-width: 486px) and (max-width: 624px){
+            left: 21%;
+        }
+        @media screen and (min-width: 385px) and (max-width: 486px){
+            left: 32%;
+        }
+        @media screen and (min-width: 200px) and (max-width: 385px){
+            left: 26%;
+        }
+        
+        
 } 
  .wave2{
     width: 104px;
@@ -218,9 +229,25 @@ section{
     left: 31%;
     top: 25%;
     opacity: 0.4;
-        @media screen and (min-width:200px) and (max-width:800px){
-            left: 32%; 
+        @media screen and (min-width:768px) and (max-width:800px){
+            left: 27%; 
         }
+        @media screen and (min-width: 624px) and (max-width: 768px){
+            left: 32%;
+        }
+        @media screen and (min-width: 486px) and (max-width: 624px){
+            left: 27%;       
+        }
+        @media screen and (min-width: 385px) and (max-width: 486px){
+            left: 36%;
+        }
+        @media screen and (min-width: 340px) and (max-width: 385px){
+            left: 33%;
+        }
+        @media screen and (min-width: 200px) and (max-width: 340px){
+            left: 30%;
+        }
+        
 }
 
 .wave3{
@@ -230,34 +257,27 @@ section{
     left: 35%;
     top: 30%;
     opacity: 0.7;
-        @media screen and (min-width:760px) and (max-width:800px){
+        @media screen and (min-width:768px) and (max-width:800px){
             left: 31%;
-            
         }
-        @media screen and (min-width:200px) and (max-width:7600px){
-            left: 35%;
-            
-        }
-}
-////media Wave
-@media screen and (max-width: 200px) and (min-width: 640px){
-    .wave1 {
-        left: 27%;
-    }
-    }
-    
-    @media screen and (max-width: 200px) and (min-width: 640px){
-    .wave2 {
-        left: 32%;
-    }
-    }
-    
-    @media screen and (max-width: 200px) and (min-width: 640px){
-        .wave3 {
+        @media screen and (min-width: 200px) and (max-width: 768px){
             left: 34%;
         }
-    }
-    
+        @media screen and (min-width: 486px) and (max-width: 624px){
+            left: 31%;
+        }
+        @media screen and (min-width: 385px) and (max-width: 486px){
+            left: 38%;
+        }
+        @media screen and (min-width: 340px) and (max-width: 385px){
+            left: 36%;
+        }
+        @media screen and (min-width: 200px) and (max-width: 340px){
+            left: 34%;
+        }
+        
+}
+
 //круговое вращение
 @keyframes wave {
     100% {
@@ -304,9 +324,3 @@ section{
       transform: scale3d(1.4, 1.4, 1.4);
     }
   }
-  
-//   .pulse {
-//     -webkit-animation-name: pulse;
-//     animation-name: pulse;
-//   }
-  
