@@ -54,6 +54,25 @@ $colorPink: #ff7f8e;
 $colorGray: #989898;
 $colorRed: #fb5150;
 
+
+//btn style
+@mixin btn_red {
+    padding: 12px 18px;
+    background: #ff7f8e;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    &:hover{
+        cursor: pointer;
+        $colorRed: #fb5150;
+        background-color: $colorRed;
+        transition: 0.4s ease-in;
+        -webkit-box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
+        -moz-box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
+        box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
+    }
+    
+}
 //группировка ширины контента по классу
 .content{
     max-width: 1108px;  
@@ -84,7 +103,7 @@ $colorRed: #fb5150;
     border-radius: $borderR20;
     &:hover{
         cursor: pointer;
-$colorRed: #fb5150;
+        $colorRed: #fb5150;
         background-color: $colorRed;
         transition: 0.4s ease-in;
         -webkit-box-shadow: 0px 0px 18px 1px rgba(255,127,142,1);
@@ -431,6 +450,12 @@ $colorRed: #fb5150;
         margin: 0 auto;
         width: 100%;
     }
+
+    .card_btn{
+        button{
+            @include btn_red
+        }
+    }
 }
 
 
@@ -461,6 +486,7 @@ $colorRed: #fb5150;
     .product-list{
         padding: 0 16px 20px 16px;
     }
+
 }
 
 
@@ -509,3 +535,22 @@ $colorRed: #fb5150;
 @media (max-width: 480px) {
 
 }
+
+.section_product{
+    h3{
+
+    }
+    .products{
+        display: flex;
+        justify-content: space-between;
+        .block_product{
+            img{}
+            span{
+
+            }
+        }
+    }
+}
+
+
+
