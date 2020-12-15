@@ -77,6 +77,11 @@ $colorRedBlack: #491305;
             width: 40%;    
             font-size: 24px;
             line-height: 18px;
+            @media screen and (max-width: 622px) {
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+            }
             p{
                 font-size: 16px;  
                 padding-left: 6px;  
@@ -85,7 +90,7 @@ $colorRedBlack: #491305;
         .header-btn{
             display: flex;
             padding: 6px;
-            width: 10%;
+            width: auto;
             a{
                 width: 40px;
                 height: 40px;
@@ -183,7 +188,7 @@ $colorRedBlack: #491305;
     display: none;
     @media screen and (max-width: 640px) {
         display:flex;
-        
+        margin: 0 20px;
     }
     span{
         position: relative;
@@ -223,6 +228,7 @@ $colorRedBlack: #491305;
     top: 8px;
     }
     >ul{
+        z-index: 2;
         display: block;
         flex-direction: column;
         position: fixed;
@@ -241,8 +247,9 @@ $colorRedBlack: #491305;
         align-items: center;
         display: flex;
         position: absolute;
-    right: 2%;
-    top: 2%;
+        right: 2%;
+        top: 2%;
+        z-index: 2;
         span{
             background: transparent;
            &:before{
@@ -273,6 +280,9 @@ $colorRedBlack: #491305;
     img{
         height: 370px;
         width: 100%;
+        @media screen and (max-width:640px){
+            height: 220px;
+        }
     }
 }
 .swiper-container{
