@@ -59,6 +59,9 @@ $colorRedBlack: #491305;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+        @media screen and (max-width: 622px) {
+            flex-direction: column;
+        }
         h2{
             min-width: 350px;    
             font-size: 32px;
@@ -296,6 +299,10 @@ $colorRedBlack: #491305;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 622px) {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
     p{
         display: block;
         width: 574px;
@@ -303,5 +310,10 @@ $colorRedBlack: #491305;
         text-align: center;
         font-size: 18px;
         letter-spacing: 2px;
+        @media screen and (max-width: 622px) {
+            width: auto;
+            padding: 10px;
+            
+        }
     }
 }
