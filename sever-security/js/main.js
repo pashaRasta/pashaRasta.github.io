@@ -8,20 +8,19 @@ menuBurgerShow.click(function(){
 
 
 
-
-var swiper = new Swiper('.swiper-container', {
-    cssMode: true,
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 2,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    pagination: {
-      el: '.swiper-pagination'
-    },
-    mousewheel: true,
-    keyboard: true,
   });
-
 
 
   // $(document).ready(function() {
