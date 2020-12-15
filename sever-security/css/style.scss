@@ -283,12 +283,44 @@ $colorRedBlack: #491305;
 .swiper-wrapper{
     margin: 12px 0;
     img{
-        height: 370px;
+        height: 320px;
         width: 100%;
         @media screen and (max-width:640px){
             height: 220px;
         }
     }
+}
+
+
+.mask_grey{
+    background-color: #808080a1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.span_slide_desc{
+position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: 27px;
+    color: #fff;
+    display: block;
+    width: 33%;
+    background: red;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+}
+.href_slide_desc{
+background: green;
+    font-size: 22px;
+    position: absolute;
+    left: 28%;
+    top: 40%;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
 }
 .swiper-container{
     .swiper-button-next{
