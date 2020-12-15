@@ -67,8 +67,9 @@ $colorRedBlack: #491305;
             font-size: 32px;
             line-height: 25px;
             text-align: center;
-
-            //letter-spacing: 3px;
+            @media screen and (max-width:370px){
+                min-width: 310px;
+            }
             .header_name{
 
             }
@@ -91,12 +92,16 @@ $colorRedBlack: #491305;
             display: flex;
             padding: 6px;
             width: auto;
+            border: 1px solid #ff811d;
+            border-radius: 16px;
+            background: #ffffff;
             a{
                 width: 40px;
                 height: 40px;
                 background-image: url("../img/header/phone.png");
                 background-size: cover;
                 border-radius:50%;
+                margin: 0 4px;
                 &:hover{
                     box-shadow: 0px 0px 12px;
                 }
@@ -320,9 +325,12 @@ $colorRedBlack: #491305;
         text-align: center;
         font-size: 18px;
         letter-spacing: 2px;
+        background: #ffffff8a;
+        border-radius: 20px;
         @media screen and (max-width: 622px) {
             width: auto;
             padding: 10px;
+
             
         }
     }
