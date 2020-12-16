@@ -73,6 +73,10 @@ $colorRedBlack: #491305;
             .header_name{
 
             }
+            @media screen and (max-width:340px) {
+                font-size: 28px;
+                line-height: 25px;
+            }
         }
         .my_phone{
             width: 40%;    
@@ -194,6 +198,7 @@ $colorRedBlack: #491305;
     @media screen and (max-width: 640px) {
         display:flex;
         margin: 0 20px;
+        padding: 10px 0;
     }
     span{
         position: relative;
@@ -283,13 +288,6 @@ $colorRedBlack: #491305;
 }
 .swiper-wrapper{
     margin: 12px 0;
-    img{
-        height: 320px;
-        width: 100%;
-        @media screen and (max-width:640px){
-            height: 220px;
-        }
-    }
 }
 //slides
 .slide1{
@@ -297,24 +295,13 @@ $colorRedBlack: #491305;
     width: 100%;
     height: 320px;
     display: flex;
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) and (min-width:340px){
         background-image: url("../img/slider/slide1_600.png");
+        height: 220px;
     }
     @media screen and (max-width: 340px){
         background-image: url("../img/slider/slide1_320.png");
-        height: 220px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .slide1{
-    background-image: url("../img/slider/slide1_600.png");
-    }
-}
-@media screen and (max-width: 340px){
-    .slide1{
-    background-image: url("../img/slider/slide1_320.png");
-    height: 220px;
+        height: 200px;
     }
 }
 ////////////
@@ -353,6 +340,7 @@ $colorRedBlack: #491305;
                 width: 258px;
             }
             @media screen and (max-width:420px) {
+                line-height: 10px;
                 font-size: 12px;
                 left: 40px;
                 width: 138px;
@@ -379,7 +367,7 @@ $colorRedBlack: #491305;
             }
             @media screen and(max-width:420px) {
                 left: 120px;
-                top: 147px;
+                top: 128px;
                 width: 109px;
             }
         }
