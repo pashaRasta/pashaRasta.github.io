@@ -276,6 +276,7 @@ $colorRedBlack: #491305;
 }
 
 .content-slider{
+    background: #ffffff;
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
@@ -316,30 +317,30 @@ position: absolute;
 background: green;
     font-size: 22px;
     position: absolute;
-    left: 28%;
-    top: 40%;
+    left: 34%;
+    top: 43%;
     padding: 5px 10px;
     color: #fff;
     text-decoration: none;
 }
-.swiper-container{
-    .swiper-button-next{
-        &:after{
-            border: 2px solid #ff811d;
-            padding: 8px 8px;
-            border-radius: 20px;
-        }
-    }
-    .swiper-button-prev{
-        &:after{
-            border: 2px solid #ff811d;
-            padding: 8px 8px;
-            border-radius: 20px;
+// .swiper-container{
+//     .swiper-button-next{
+//         &:after{
+//             border: 2px solid #ff811d;
+//             padding: 8px 8px;
+//             border-radius: 20px;
+//         }
+//     }
+//     .swiper-button-prev{
+//         &:after{
+//             border: 2px solid #ff811d;
+//             padding: 8px 8px;
+//             border-radius: 20px;
 
-        }
-    }
+//         }
+//     }
 
-}
+// }
 
 .shield_section{
     padding: 12px 0 30px 0;
@@ -364,6 +365,55 @@ background: green;
             padding: 10px;
 
             
+        }
+    }
+}
+
+
+.block_security{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .block-services{
+        position: relative;
+        width: 380px;
+        height: 240px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .mask_services{
+            background-color: #415b6cc9;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        a{
+            font-size: 30px;
+            line-height: 24px;
+            width: 100%;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            text-decoration: none;
+            height: 100%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+                transition: 1.5s;
+            }
         }
     }
 }
