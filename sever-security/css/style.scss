@@ -214,6 +214,7 @@ $colorRedBlack: #491305;
     display: none;
     @media screen and (max-width: 640px) {
         display: flex;
+        align-items: center;
         margin: 0 20px;
         padding: 10px 0;
         justify-content: space-around;
@@ -282,6 +283,7 @@ $colorRedBlack: #491305;
         right: 2%;
         top: 2%;
         z-index: 2;
+        
         span{
             background: transparent;
            &:before{
@@ -387,8 +389,9 @@ $colorRedBlack: #491305;
             left: 356px;
             top: 200px;
             position: absolute;
-            display: block;
-            width: 170px;
+            display: flex;
+            align-items: center;
+            width: 200px;
             @media screen and(max-width:620px) {
                 font-size: 14px;
                 left: 200px;
@@ -399,6 +402,11 @@ $colorRedBlack: #491305;
                 left: 120px;
                 top: 128px;
                 width: 114px;
+            }
+                img{
+                    width: 20px;
+                    height: 20px;
+                
             }
         }
     }

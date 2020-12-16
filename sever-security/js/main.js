@@ -1,12 +1,24 @@
-var menuBurgerShow = $('.show_nav');
-var dwsMenu = $('.dws_menu');
+let menuBurgerShow = $('.show_nav');
+let dwsMenu = $('.dws_menu');
 
 menuBurgerShow.click(function(){
-    menuBurgerShow.toggleClass('active');
-    dwsMenu.toggleClass('active');
-})
 
+  menuBurgerShow.toggleClass('active');
+  dwsMenu.toggleClass('active');
 
+});
+
+$('a[href^="#"').on('click', function() {
+
+  let href = $(this).attr('href');
+  $('html, body').animate({
+      scrollTop: $(href).offset().top
+  });
+  dwsMenu.removeClass('active');  
+  menuBurgerShow.removeClass('active');
+
+  return false;
+});
 
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
