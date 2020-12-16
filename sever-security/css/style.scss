@@ -324,7 +324,7 @@ $colorRedBlack: #491305;
 .swiper-wrapper{
     margin: 12px 0;
 }
-//slides
+//slide1
 
 // <!-- <img src="./img/slider/slide5.png" alt=""> -->
 // <!-- <img src="./img/slider/slide1.png" alt=""> -->
@@ -336,6 +336,7 @@ $colorRedBlack: #491305;
     width: 100%;
     height: 320px;
     display: flex;
+    background-size: cover;
     @media screen and (max-width: 600px) and (min-width:340px){
         background-image: url("../img/slider/slide1_600.png");
         height: 220px;
@@ -346,9 +347,100 @@ $colorRedBlack: #491305;
         background-size: cover;
     }
 }
+//slide2
+.slide2{
+    background-image: url("../img/slider/slide5.png");
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-size: cover;
+    @media screen and (max-width: 600px) and (min-width:340px){
+        height: 220px;
+    }
+    @media screen and (max-width: 340px){
+        height: 200px;
+        background-size: cover;
+    }
+}
+//slide3
+.slide3{
+    background-image: url("../img/slider/slide3.png");
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-size: cover;
+    @media screen and (max-width: 600px) and (min-width:340px){
+        height: 220px;
+    }
+    @media screen and (max-width: 340px){
+        height: 200px;
+        background-size: cover;
+    }
+}
+//slide4
+.slide4{
+    background-image: url("../img/slider/slide2.png");
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-size: cover;
+    @media screen and (max-width: 600px) and (min-width:340px){
+        height: 220px;
+    }
+    @media screen and (max-width: 340px){
+        height: 200px;
+        background-size: cover;
+    }
+}
+//slide5
+.slide5{
+    background-image: url("../img/slider/slide4.png");
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-size: cover;
+    @media screen and (max-width: 600px) and (min-width:340px){
+        height: 220px;
+    }
+    @media screen and (max-width: 340px){
+        height: 200px;
+        background-size: cover;
+    }
+}
+//slide6
+.slide6{
+    background-image: url("../img/slider/slide1.png");
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-size: cover;
+    @media screen and (max-width: 600px) and (min-width:340px){
+        height: 220px;
+    }
+    @media screen and (max-width: 340px){
+        height: 200px;
+        background-size: cover;
+    }
+}
+//slide7
+.slide7{
+    background-image: url("../img/slider/slide6.png");
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-size: cover;
+    @media screen and (max-width: 600px) and (min-width:340px){
+        height: 220px;
+    }
+    @media screen and (max-width: 340px){
+        height: 200px;
+        background-size: cover;
+    }
+}
 ////////////
 .mask_grey{
-    background-color: #808080a1;
+    // background-color: #808080a1;
+    background-color: #80808075;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -420,9 +512,11 @@ $colorRedBlack: #491305;
             }
         }
     }
+    
 }
 //shield_section
 .shield_section{
+    margin-top: 80px;
     padding: 12px 0 30px 0;
     display: flex;
     justify-content: space-around;
@@ -455,6 +549,9 @@ $colorRedBlack: #491305;
             
         }
     }
+    @media screen and(max-width:420px) {
+        margin: 0;
+    }
 }
 
 
@@ -463,6 +560,7 @@ $colorRedBlack: #491305;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 80px 0;
     .block-services{
         position: relative;
         width: 380px;
@@ -470,8 +568,8 @@ $colorRedBlack: #491305;
         margin-bottom: 20px;
         overflow: hidden;
         -webkit-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
         img{
             height: 100%;
             width: 100%;
@@ -511,6 +609,9 @@ box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
             height: 200px;
         }
     }
+    @media screen and(max-width:420px) {
+        margin: 0;
+    }
 }
 
 // fixed_bg_block
@@ -522,7 +623,7 @@ box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
     background-size: cover;
     @media screen and (min-width:640px) and (max-width:920){
         background-image: url("../img/about_us/bg_attach_920.png");
-    }
+    }   
     @media screen and (min-width:200px) and (max-width:640px){
         background-image: url("../img/about_us/bg_attach_640.png");
 
@@ -531,12 +632,19 @@ box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
     .logo_block{
         height: 566px;
         width: 100%;
-        background:red;
         display: flex;
         justify-content: space-between;
         @media screen and (max-width: 1200px){
             width: 80%;
             margin: 0 auto;
+        }
+        .p_big{
+            background-color: #816d40;
+
+        }
+        .p_smoll{
+            background-color: #442820
+            ;
         }
     }
 
