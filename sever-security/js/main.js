@@ -22,7 +22,7 @@ menuBurgerShow.click(function(){
     },
   });
 
-
+//залипание меню
   // $(document).ready(function() {
 
   //   var navOffset = $('.nav').offset().top;
@@ -45,3 +45,4 @@ menuBurgerShow.click(function(){
   //       }
   //     })
   // });
+

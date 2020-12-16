@@ -60,21 +60,24 @@ $colorRedBlack: #491305;
         align-items: center;
         padding: 20px;
         @media screen and (max-width: 622px) {
-            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 10px 10px 0 10px;
         }
         h2{
             min-width: 350px;    
             font-size: 32px;
             line-height: 25px;
             text-align: center;
-            @media screen and (max-width:370px){
-                min-width: 310px;
+            @media screen and (max-width:420px){
+                min-width: 260px;
+                width: 100%;
+                
             }
             .header_name{
 
             }
             @media screen and (max-width:340px) {
-                font-size: 28px;
+                font-size: 26px;
                 line-height: 25px;
             }
         }
@@ -83,20 +86,26 @@ $colorRedBlack: #491305;
             font-size: 24px;
             line-height: 18px;
             @media screen and (max-width: 622px) {
-                width: 100%;
+                width: 50%;
                 text-align: center;
                 padding: 20px 0;
             }
+            @media screen and (max-width:420px) {
+                font-size: 20px;
+            }
             p{
                 font-size: 16px;  
-                padding-left: 6px;  
+                padding-left: 6px; 
+                @media screen and (max-width:340px){
+                    font-size: 12px;
+                } 
             }
         }
         .header-btn{
             display: flex;
             padding: 6px;
             width: auto;
-            border: 1px solid #ff811d;
+            // border: 1px solid #ff811d;
             border-radius: 16px;
             background: #ffffff;
             a{
@@ -109,6 +118,14 @@ $colorRedBlack: #491305;
                 &:hover{
                     box-shadow: 0px 0px 12px;
                 }
+                @media screen and (max-width:420px) {
+                width: 30px;
+                height: 30px;
+                }
+            }
+            @media screen and (max-width:420px) {
+                    width:40%;   
+                    justify-content: space-around;
             }
         }
     }
@@ -293,6 +310,10 @@ $colorRedBlack: #491305;
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
+    @media screen and (max-width:420px){
+        width: 100%;
+        
+    }
 }
 .swiper-wrapper{
     margin: 12px 0;
@@ -310,6 +331,7 @@ $colorRedBlack: #491305;
     @media screen and (max-width: 340px){
         background-image: url("../img/slider/slide1_320.png");
         height: 200px;
+        background-size: cover;
     }
 }
 ////////////
@@ -403,7 +425,15 @@ $colorRedBlack: #491305;
         @media screen and (max-width: 622px) {
             width: auto;
             padding: 10px;
+            font-weight: 100;
+            font-size: 16px;
 
+            
+        }
+    }
+    img{
+        @media screen and (max-width:420px) {
+            width: 200px;
             
         }
     }
@@ -421,6 +451,9 @@ $colorRedBlack: #491305;
         height: 240px;
         margin-bottom: 20px;
         overflow: hidden;
+        -webkit-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
         img{
             height: 100%;
             width: 100%;
@@ -455,5 +488,10 @@ $colorRedBlack: #491305;
                 transition: 1.5s;
             }
         }
+        @media screen and (max-width:420px){
+            width: 280px;
+            height: 200px;
+        }
     }
 }
+
