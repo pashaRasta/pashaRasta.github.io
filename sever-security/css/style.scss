@@ -196,9 +196,14 @@ $colorRedBlack: #491305;
     align-items: center;
     display: none;
     @media screen and (max-width: 640px) {
-        display:flex;
+        display: flex;
         margin: 0 20px;
         padding: 10px 0;
+        justify-content: space-around;
+        width: 40%;
+    }
+    p{
+        color:#fff;
     }
     span{
         position: relative;
@@ -276,6 +281,9 @@ $colorRedBlack: #491305;
                 transition: 0.6s;
 
             }
+        }
+        p{
+            display: none;
         }
     }
 }
