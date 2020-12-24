@@ -155,6 +155,7 @@ $colorRedBlack: #491305;
 .dws_menu > ul{
 	display: flex;
     justify-content: center;
+    align-items: center;
     @media screen and (max-width:640px) {
         display: none;
     }
@@ -633,6 +634,7 @@ $colorRedBlack: #491305;
     }   
     @media screen and (min-width:200px) and (max-width:640px){
         background-image: url("../img/about_us/bg_attach_640.png");
+        padding: 40px 0;
 
     }
 
@@ -641,19 +643,116 @@ $colorRedBlack: #491305;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width: 1200px){
+        position: relative;
+        @media screen and (max-width: 1020px){
             width: 80%;
             margin: 0 auto;
         }
-        .p_big{
-            background-color: #816d40;
+        @media screen and (max-width: 1020px){
+            flex-direction: column;
+            align-items: center;
+        }
+        @media screen and (max-width: 520px){
+            height: auto;
 
         }
+
+        .p_big{
+            width: 57%;
+            background-color: #816d40c9;
+            position: relative;
+                @media screen and (min-width: 1020px){
+                    clip-path: polygon(50% 0%, 100% 0, 87% 53%, 76% 100%, 0 100%, 0% 63%, 0 0);
+                }
+                @media screen and (max-width: 1020px){
+                    width: 100%;
+                }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                font-size: 49px;
+                color: #fff;
+                text-align: center;
+                letter-spacing: 13px;
+                line-height: 52px;
+                font-weight: 600;
+                text-shadow: 9px 9px 8px #000;
+                @media screen and (min-width: 1020px){
+                    transform: translate(-50%, -50%);
+                    
+                }
+                @media screen and (max-width: 1020px){
+                    font-size: 29px;
+                    color: #fff;
+                    padding: 20px 20px;
+                    letter-spacing: 9px;
+                    line-height: 32px;
+                    position: static;                
+                }
+                @media screen and (max-width: 420px){
+                    line-height: 18px;
+                    font-size: 20px;             
+                }   
+            }
+        }
         .p_smoll{
-            background-color: #442820
-            ;
+            position: absolute;
+            height: 100%;
+            width: 57%;
+            background-color: #442820e3;
+            right: 0%; 
+            @media screen and (min-width: 1020px){
+                clip-path: polygon(100% 0, 100% 40%, 100% 100%, 0 100%, 24% 0);
+            }
+            @media screen and (max-width: 1020px){
+                position: static;   
+                width: 100%;
+             
+            }
+            span{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                p{
+                    position: absolute;
+                    color: #ffffff;
+                    width: 60%;
+                    letter-spacing: 4px;
+                    @media screen and (max-width: 1020px){
+                        position: static; 
+                        padding: 20px 20px;
+                        width: 100%;
+                    }
+                    @media screen and (max-width: 420px){
+                        font-size: 14px;
+                        line-height: 14px;
+                        letter-spacing: 1px;
+                    }
+                }  
+            }
+                     
         }
     }
 
 }
+
+
+///////////////
+.contacts{
+    .img_mask{
+        padding: 72px 0 60px 0;
+        background-image: url("../img/contscts/contscts_header.png");
+        background-size: cover;
+        .window{
+            color:#ffffff;
+            background: linear-gradient( #8d7845,#5e302a);
+        }
+    }
+}
+
 
