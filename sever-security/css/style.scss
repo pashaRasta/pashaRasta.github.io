@@ -781,7 +781,7 @@ $colorRedBlack: #491305;
         position: absolute;
         background: #888888ba;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         padding: 30px 20px;
         align-items: center;
         justify-content: center;
@@ -800,6 +800,11 @@ $colorRedBlack: #491305;
                     margin-top: 10px;
                 }
             
+            }
+            @media screen and (max-width:520px) {
+                width: 80%;
+                padding: 6px 6px;
+                
             }
         }   
     }
