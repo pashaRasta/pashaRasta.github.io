@@ -554,6 +554,15 @@ $colorRedBlack: #491305;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url("../img/shield_section/shield_sectionBG.png");
+    background-attachment: fixed;
+    width: 100%;
+    @media screen and (max-width:520px) and (min-width:300px) {
+        background-image: url("../img/shield_section/shield_sectionBG420.png");
+    }
+    @media screen and (max-width:1020px) and (min-width:521px) {
+        background-image: url("../img/shield_section/shield_sectionBG600.png");
+    }
     @media screen and (max-width: 622px) {
         flex-direction: column;
         flex-flow: column-reverse;
@@ -771,12 +780,13 @@ $colorRedBlack: #491305;
 
 .feedback{
     background-image: url("../img/feedback/feedback_bg.png");
-    height: 552px;
+    // height: 552px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
+    padding: 300px 0;
     .form_action{
         position: absolute;
         background: #888888ba;
