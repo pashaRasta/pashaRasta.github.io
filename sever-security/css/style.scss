@@ -77,9 +77,6 @@ $colorRedBlack: #491305;
                 width: 100%;
                 
             }
-            .header_name{
-
-            }
             @media screen and (max-width:340px) {
                 font-size: 28px;
                 line-height: 25px;
@@ -775,14 +772,10 @@ $colorRedBlack: #491305;
                         letter-spacing: 1px;
                     }
                 }  
-            }
-                     
+            }                
         }
     }
-
 }
-
-
 
 .feedback{
     background-image: url("../img/feedback/feedback_bg.png");
@@ -840,11 +833,6 @@ $colorRedBlack: #491305;
         left:0;
     }
 }
-
-
-
-
-
 ///////////////contacts itml
 .contacts{
     .img_mask{
@@ -858,11 +846,9 @@ $colorRedBlack: #491305;
             flex-direction: column;
             text-align: center;
             font-size: 22px;
-            p{}
             h3{
                 margin: 10px 0;     
             }
-            span{}
             @media screen and (max-width:1230px) {
                 margin: 0 20px;
             }
