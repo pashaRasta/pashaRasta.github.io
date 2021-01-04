@@ -45,7 +45,10 @@ body{
     height: 100%;
     position: relative;
    //background-size: cover;
-   background-image: url("../img/item_shop/shop_bg.png");
+   background-image: url("../img/bodyBGnew.jpg");
+   background-attachment: fixed;
+   background-repeat: repeat-y;
+   background-size: cover;
 }
 
 //content
@@ -139,10 +142,11 @@ $colorRedBlack: #491305;
         .header-btn{
             display: flex;
             padding: 6px;
+            
             width: auto;
             // border: 1px solid #ff811d;
             border-radius: 16px;
-            background: #ffffff;
+            background: #ffffff4a;
             a{
                 width: 40px;
                 height: 40px;
@@ -351,7 +355,6 @@ $colorRedBlack: #491305;
 }
 //swiper
 .content-slider{
-    background: #ffffff;
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
@@ -611,7 +614,7 @@ $colorRedBlack: #491305;
         text-align: center;
         font-size: 18px;
         letter-spacing: 2px;
-        background: #fffffff0;;
+        background: #ffffff70;
         border-radius: 20px;
         @media screen and (max-width: 622px) {
             width: auto;
