@@ -386,7 +386,7 @@ nav{
     .swiper-logo{
     	background: $bg_slider_green;
         padding: 30px 14px;
-    	top:28%;
+    	top:22%;
         left: 50%;
         transform: translate(-50%,-50%);
         position: absolute;
@@ -404,7 +404,8 @@ nav{
         	    font-size: 20px;
         }
          @media screen and (max-width: 540px) {
-         	top:10%;
+         	top: 12%;
+    		left: 37%;
         }
         @media screen and (max-width: 420px) {
          	padding: 10px 10px;
@@ -435,6 +436,7 @@ nav{
         }
          @media screen and (max-width: 640px) {
         	    font-size: 14px;
+        	    left: 60%;
         }
 
     }

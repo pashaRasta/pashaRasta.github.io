@@ -377,7 +377,7 @@ nav ul li a {
 .swiper_block .swiper-logo {
   background: #4caf50;
   padding: 30px 14px;
-  top: 28%;
+  top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -403,7 +403,8 @@ nav ul li a {
 }
 @media screen and (max-width: 540px) {
   .swiper_block .swiper-logo {
-    top: 10%;
+    top: 12%;
+    left: 37%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -440,6 +441,7 @@ nav ul li a {
 @media screen and (max-width: 640px) {
   .swiper_block .swiper-text {
     font-size: 14px;
+    left: 60%;
   }
 }
 .swiper_block .request-btn {
