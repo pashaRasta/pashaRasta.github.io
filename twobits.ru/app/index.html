@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- google_fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/lib/swiper.css">	
+	<title>TWO_KIT</title>
+	<style>.modal_wrapper{display:none;width:100%;height:100vh;position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);z-index:99999;background-color:#bcbcbcbc}.modal_wrapper .modal_wrapp{min-width:320px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background:#fff;padding:20px 20px 20px 20px;border-radius:4px;display:flex;flex-direction:column;border:1px solid #dedede;box-shadow:inset 0 3px 3px rgba(0,0,0,.08)}.modal_wrapper .modal_wrapp .clossed_modal{position:absolute;font-size:30px;right:4%;top:2%}.modal_wrapper .modal_wrapp .clossed_modal:hover{cursor:pointer}.modal_wrapper .modal_wrapp .body_modal form div{display:flex}.modal_wrapper .modal_wrapp .body_modal form div input{width:100%;background:#f6f6f6;border:1px solid #dedede;box-shadow:inset 0 3px 3px rgba(0,0,0,.08)}@media screen and (max-width: 767px){.modal_wrapper .modal_wrapp .body_modal form div input{width:80%}}.modal_wrapper .modal_wrapp .body_modal form div input[type=placeholder]{height:80px}@media screen and (max-width: 767px){.modal_wrapper .modal_wrapp .body_modal form .modal_form_input{display:flex;flex-direction:column}}.modal_wrapper .modal_wrapp .footer_modal{display:flex;flex-direction:column}.modal_wrapper .modal_wrapp .footer_modal button{display:flex;align-items:center;justify-content:center;width:30%;margin:0 auto;border:2px solid #caba2e;background:#ffeb3b;width:120px;padding:12px 8px;border-radius:26px}.modal_wrapper .modal_wrapp .footer_modal span{font-size:8px;text-align:center;margin:12px}.modal_show{display:block !important}/*# sourceMappingURL=modal_min.css.map */
+</style>
+</head>
+<body>
+	<!-- скрытая всплывающая форма -->
+	<div class="modal_wrapper">
+			<div class="modal_wrapp content">
+				<span class="clossed_modal">&times;</span>
+				<div class="header_modal">Кратко опишите ваши желания</div>
+				<div class="body_modal">
+					<form>
+						<div> <input type="name" placeholder="Введите ваше имя"></div>
+						<div class="modal_form_input">
+							<input type="mail" placeholder="Электронная почта">
+							<input type="phone" placeholder="Ваш номер телефона" name="">
+						</div>
+						<div>
+							<input type="placeholder" placeholder="Ваше сообщение">
+						</div>
+					</form>
+				</div>
+				<div class="footer_modal">
+					<button>Отправить</button>
+					<span> Нажимая на кнопку Отправить, я даю согласие на обработку персональных данных</span>
+				</div>
+			</div>    	
+    </div>
+	<!-- Шапка -->
+	<header>
+		<div class="header_top">
+			<div class="content header_content">
+				<div class="logo">
+					<p class="name_logo">two<strong>bit</strong></p>
+					<p>Интернет агенство</p>
+				</div>
+				<div class="phone_feedBack">
+					<div class="phone_block">
+						<a href="tel:+79818712492">+79818712492</a>
+						<strong>zlodei2991@gmail.com</strong>
+					</div>
+					<button class="btn_feedBack request_modal">отправить заявку</button>
+				</div>
+				<div class="social">
+					<a href="#"><div src="img/fb.png" class="social_fb social_img" alt=""></div></a>
+					<a href="#"><div src="img/inst.png" class="social_inst social_img" alt=""></div></a>
+				</div>
+			</div>
+
+			<!-- бургер меню -->
+			<nav>
+				<div class="content">
+					<div class="show_menu">
+						<span></span>
+					</div>
+					<ul>
+						<li><a href="">о нас</a></li>
+						<li><a href="">что вы получаете</a></li>
+						<li><a href="">наши работы</a></li>
+						<li><a href="#calculate">калькулятор</a></li>
+						<li><a href="#preferences">почему мы</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- слайдер swiper-->
+	<section class=" swiper_block">
+        <div class="swiper-container">
+	            <div class="swiper-wrapper">
+	                <div class="swiper-slide slide_one">
+		                <p class="swiper-logo block-header-text">Стать нашим клиентом</p>
+		                <p class="swiper-text"> Мы предлогаем расчитать стоимость наших услуг <br> что бы вы не сталктвались с "подводными камнями" </p>
+		                <a href="#calculate" class="request-btn">Наш калькуоятор</a>
+		                <img class="btm_img" src="img/slider/cursor.png" alt="">
+			        </div>
+		            <div class="swiper-slide slide_two">
+		                <p class="swiper-logo block-header-text">Мы вам все подробно расскажем</p>
+		                <p class="swiper-text">Виды сайтов <br>  и технологии для развития</p>
+		                <a href="#" class="request-btn request_modal ">Подробнее</a>
+		                <img class="btm_img" src="img/slider/cursor.png" alt="">
+		            </div>
+		            <div class="swiper-slide slide_three">
+		                <p class="swiper-logo block-header-text">Мы всегда рады клиентам</p>
+		                <p class="swiper-text">В любой момент вы можите обратиться за тех поддержкой <br>  которая не заставит вас ждать</p>
+		                <a href="#" class="request-btn request_modal">Обратиться за помощью</a>
+		                <img class="btm_img" src="img/slider/cursor.png" alt="">
+		            </div>
+	            </div>
+          </div>
+    </section>
+
+
+    <section class="calculate" id="calculate">
+    	<p class="calculate_top_text">Рассчитайте стоимость Вашего сайта и получите прогноз окупаемости вложений в подарок!</p>
+    	<div class="swiper-container_calculate">
+	            <div class="swiper-wrapper">
+	                <div class="swiper-slide">
+	                	<div class="header_text">	
+		                	<span>1</span>	
+		                	 Какой вид сайта вы хотели бы заказать
+		                </div>
+	                	<div class="body_checkbox">
+	                		  <p><input type="checkbox" id="check1" class="checkbox_custom"><label for="check1">Сайт-визитка</label></p>
+							   <p><input type="checkbox" id="check2" class="checkbox_custom"><label for="check2">Интернет-магазин</label></p>
+							   <p><input type="checkbox" id="check3" class="checkbox_custom"><label for="check3">Лендинг</label></p>
+							  <p><input type="checkbox" id="check4" class="checkbox_custom"><label for="check4">Сайт компании</label></p>
+	                	</div>
+	                	<div class="button_footer">
+	                		<button class="prev_btn">Назад</button>
+	                		<button class="next_btn">Далее</button>
+	                	</div>
+			        </div>
+
+		            <div class="swiper-slide ">
+		            	<div class="header_text">	
+		                	<span>2</span>	
+		                	 Тематика вашего бизнеса?
+		                </div>
+	                	<div class="body_checkbox body_calc_input">
+	                		  <p><input type="text"></p>
+	                	</div>
+	                	<div class="button_footer">
+	                		<button class="prev_btn">Назад</button>
+	                		<button class="next_btn">Далее</button>
+
+	                	</div>
+		            </div>
+
+		            <div class="swiper-slide ">
+		            	<div class="header_text">	
+		                	<span>3</span>	
+		                	 Какой вид сайта вы хотели бы заказать
+		                </div>
+	                	<div class="body_checkbox">
+	                		  <p><input type="checkbox" id="check5" class="checkbox_custom"><label for="check5">Тексты</label></p>
+							   <p><input type="checkbox" id="check6" class="checkbox_custom"><label for="check6">Изображения</label></p>
+							   <p><input type="checkbox" id="check7" class="checkbox_custom"><label for="check7">Подготовлю сам</label></p>
+							  <p><input type="checkbox" id="check8" class="checkbox_custom"><label for="check8">Хочу что бы подготовили вы</label></p>
+	                	</div>
+	                	<div class="button_footer">
+	                		<button class="prev_btn">Назад</button>
+	                		<button class="next_btn">Далее</button>
+	                	</div>
+		            </div>
+
+		            <div class="swiper-slide ">
+		            	<div class="header_text">	
+		                	<span>4</span>	
+		                	 Вам необходимо наполнение сайта?
+		                </div>
+	                	<div class="body_checkbox">
+	                		  <p><input type="checkbox" id="check9" class="checkbox_custom"><label for="check9">Да, необходимо</label></p>
+							   <p><input type="checkbox" id="check10" class="checkbox_custom"><label for="check10">Нет, наполню сам</label></p>
+	                	</div>
+	                	<div class="button_footer">
+	                		<button class="prev_btn">Назад</button>
+	                		<button class="next_btn">Далее</button>
+	                	</div>
+		              
+		            </div>
+
+		            <div class="swiper-slide ">
+		            	<div class="header_text">	
+		                	<span>5</span>	
+		                	Как долго вы существуете на рынке?
+		                </div>
+	                	<div class="body_checkbox">
+	                		  <p><input type="checkbox" id="check11" class="checkbox_custom"><label for="check11">Меньше года</label></p>
+							   <p><input type="checkbox" id="check12" class="checkbox_custom"><label for="check12">От 1 до 3 лет</label></p>
+							   <p><input type="checkbox" id="check13" class="checkbox_custom"><label for="check13">Больше 3 лет</label></p>
+	                	</div>
+	                	<div class="button_footer">
+	                		<button class="prev_btn">Назад</button>
+	                		<button class="next_btn">Далее</button>
+	                	</div>
+		              
+		            </div>
+
+		            <div class="swiper-slide ">
+		            	<div class="header_text">	
+		                	<span>6</span>	
+		                	Заполните контактные данные
+		                </div>
+	                	<div class="body_checkbox">
+	                		<form>
+							   <p>Ваше имя:</p> <input name="login">
+							   <p>Телефон в формате +79XXXXXX:</p>  <input type="tel" name="tel">
+							   <p class="submit_btn"><input type="submit" value="Отправить"></p>
+							</form>
+	                	</div>
+		            </div>
+	            </div>
+	            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
+    <section class="preferences" id="preferences">
+    	<div class="content">
+    		<div class="header_logo">Какой сайт вам нужен</div>
+    		<div class="wrapp_preferences">
+	    		<div class="item_preferences">
+	    			<div class="block_l">
+	    				<span class="logo_item_span">Сайт визитка</span>
+	    				<p>
+	    				В случае еслиЕсли для вас нужно поведать о собственной фирмы, продемонстрировать фото изготовления или же вы желаете опубликовать перечень собственных предложений и прайс на них, то сайт-визитка для вас великолепно подойдет. Маленький вебсайт из 5 страничек с обычным перечнем возможностей и довольно демократичной стоимостью. Устроить подобный вебсайт возможностейможно на даровой системе управления WordPress или же на больше продвинутой - Битрикс.</p>
+	    				<button class="request_modal">Оставить заявку</button>
+	    			</div>
+	    			<div class="block_r">
+	    				<img src="img/item_img/item1.png" alt="">
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="wrapp_preferences revers">
+	    		<div class="item_preferences">
+	    			<div class="block_l">
+	    				<span class="logo_item_span">Сайт компании</span>
+	    				<p>
+	    				Это настоящий вебсайт с хоть каким перечнем возможностей, который понадобится для вашего бизнеса. Вы сможете располагать на нем гигантские сборники предложений, делатьсоздавать фотоальбомы, включить форум или же комменты, а еще сделать индивидуальный офис для служащих и покупателей. Мы советуем создавать подобный вебсайт на системе Битрикс.</p>
+	    				<button class="request_modal">Оставить заявку</button>
+	    			</div>
+	    			<div class="block_r">
+	    				<img src="img/item_img/item2.png" alt="">
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="wrapp_preferences">
+	    		<div class="item_preferences">
+	    			<div class="block_l">
+	    				<span class="logo_item_span">Имиджевый промо-сайт</span>
+	    				<p>
+	    					 В случае еслиЕсли для вас нужно выполнить промо-акцию или же презентацию вашего продукта или же вы желаете, дабы ваш вебсайт изготовил вау-эффект на ваших покупателей и они вас запомнили, для вас необходим имиджевый промо-сайт!
+	    				</p>
+	    				<button class="request_modal">Оставить заявку</button>
+	    			</div>
+	    			<div class="block_r">
+	    				<img src="img/item_img/item3.png" alt="">
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="wrapp_preferences revers">
+	    		<div class="item_preferences">
+	    			<div class="block_l">
+	    				<span class="logo_item_span">Landing Page</span>
+	    				<p>
+	    				Это одностраничный сайт, смысл которого - заставить пользователя совершить целевое действие (нажать кнопку «купить» или «оставить заявку»). Создание лендинга подходит для продажи одного товара и одной услуги, а также для сбора контактов потенциальных клиентов.</p>
+	    				<button class="request_modal">Оставить заявку</button>
+	    			</div>
+	    			<div class="block_r">
+	    				<img src="img/item_img/item4.png" alt="">
+	    			</div>
+	    		</div>
+	    	</div>
+
+    	</div>
+
+
+    </section>
+
+
+   
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.js"
+  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+  crossorigin="anonymous"></script>
+<script src="js/lib/swiper.js"></script>
+<script type="js/lib/jqury.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
