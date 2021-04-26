@@ -63,6 +63,72 @@ table {
   box-sizing: border-box;
 }
 
+.parallax-viewport {
+  position: relative;
+  overflow: hidden;
+  width: 980px;
+  height: 80%;
+  margin: 0px auto;
+  position: absolute;
+  text-align: center;
+}
+
+.parallax-layer {
+  position: absolute;
+  text-align: center;
+  font-size: 120px;
+}
+
+.parallax1 {
+  width: 950px;
+  height: 573px;
+  display: block;
+  top: 74.5895%;
+  margin-top: -427.398px;
+  left: 24.6184%;
+  margin-left: -233.874px;
+}
+
+.parallax2 {
+  width: 900px;
+  height: 573px;
+  display: block;
+  top: 74.5895%;
+  margin-top: -427.398px;
+  left: 24.6184%;
+  margin-left: -221.565px;
+}
+
+.parallax3 {
+  width: 970px;
+  height: 563px;
+  display: block;
+  top: 74.5895%;
+  margin-top: -419.939px;
+  left: 24.6184%;
+  margin-left: -238.798px;
+}
+
+.parallax4 {
+  width: 960px;
+  height: 533px;
+  display: block;
+  top: 74.5895%;
+  margin-top: -397.562px;
+  left: 24.6184%;
+  margin-left: -236.336px;
+}
+
+.parallax5 {
+  width: 940px;
+  height: 293px;
+  display: block;
+  top: 95.5895%;
+  margin-top: -459.939px;
+  left: 14.6184%;
+  margin-left: -231.413px;
+}
+
 .header_content {
   display: flex;
   justify-content: space-between;
@@ -674,6 +740,11 @@ form .submit_btn {
 .preferences {
   padding-top: 80px;
 }
+@media screen and (max-width: 756px) {
+  .preferences {
+    margin: 0 12px;
+  }
+}
 .preferences .header_logo {
   text-align: center;
   margin: 0 auto;
@@ -681,10 +752,22 @@ form .submit_btn {
   text-transform: uppercase;
   font-size: 32px;
 }
+@media screen and (max-width: 440px) {
+  .preferences .header_logo {
+    font-size: 23px;
+  }
+}
 .preferences .item_preferences {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 656px) {
+  .preferences .item_preferences {
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+    margin: 20px 0;
+  }
 }
 .preferences .item_preferences .block_l .logo_item_span {
   font-size: 30px;
@@ -721,6 +804,13 @@ form .submit_btn {
 }
 .preferences .revers .item_preferences {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 656px) {
+  .preferences .revers .item_preferences {
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+    margin: 20px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

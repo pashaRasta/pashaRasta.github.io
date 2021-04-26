@@ -85,6 +85,57 @@ $border_slider_text:2px;
 	padding: 0 auto;
 	box-sizing: border-box;
 }
+// paralax_effect
+.parallax-viewport {
+	position:relative;
+	overflow:hidden;
+	width:980px;
+	height:80%;
+	margin:0px auto;
+	position:absolute;
+	text-align:center;
+}
+.parallax-layer {
+	position:absolute;
+	text-align:center;
+	font-size: 120px;
+}
+.parallax1 {
+			width: 950px; height: 573px; display: block;
+			top: 74.5895%;
+			margin-top: -427.398px;
+			left: 24.6184%;
+			margin-left: -233.874px;
+}
+.parallax2 {
+			width: 900px; height: 573px; display: block;
+			top: 74.5895%;
+			margin-top: -427.398px;
+			left: 24.6184%;
+			margin-left: -221.565px;
+}
+.parallax3 {
+			width: 970px; height: 563px; display: block;
+			top: 74.5895%;
+			margin-top: -419.939px;
+			left: 24.6184%;
+			margin-left: -238.798px;
+}
+.parallax4 {
+			width: 960px; height: 533px; display: block;
+			top: 74.5895%;
+			margin-top: -397.562px;
+			left: 24.6184%;
+			margin-left: -236.336px;
+}
+.parallax5 {
+			width: 940px; height: 293px; display: block;
+			top: 95.5895%;
+			margin-top: -459.939px;
+			left: 14.6184%;
+			margin-left: -231.413px;
+}
+
 //header
 .header_content{
 	display: flex;
@@ -662,108 +713,31 @@ form{
 		justify-content: center;
 	}
 }
-
-// modal_window
-// .modal_wrapper{
-// 	display: none;
-// 	width: 100%;
-// 	height:  100vh;
-// 	position: fixed;
-// 	top: 50%;
-// 	left: 50%;
-// 	transform: translate(-50%,-50%);
-// 	z-index: 99999;
-// 	background-color: #bcbcbcbc;	
-// 	.modal_wrapp{
-// 		min-width: 320px;
-// 		position: absolute;
-// 	    top: 50%;
-// 	    left: 50%;
-// 	    transform: translate(-50%,-50%);
-// 	    background: #ffffff;
-//     	padding: 20px 20px 20px 20px;
-//     	border-radius: 4px;
-//     	display: flex;
-//     	flex-direction: column;
-//     	border: 1px solid #dedede;
-//     	box-shadow: inset 0 3px 3px rgb(0 0 0 / 8%);
-// 		.clossed_modal{
-// 			position: absolute;
-// 			font-size: 30px;
-// 		    right: 4%;
-// 		    top: 2%;
-// 		    &:hover{
-// 		    	cursor: pointer;
-// 		    }
-// 		}
-// 		.header_modal{}
-// 		.body_modal{
-// 			form{
-// 				div{
-// 					display: flex;
-// 					input{
-// 						width: 100%;
-// 					    background: #f6f6f6;
-// 					    border: 1px solid #dedede;
-// 					    box-shadow: inset 0 3px 3px rgb(0 0 0 / 8%);
-// 						    @media screen and (max-width: 767px) {
-// 						    	width: 80%;
-// 						    }
-// 					}
-// 					input[type="placeholder"]{
-// 						height: 80px;
-// 					}
-// 				}
-// 				.modal_form_input{
-// 					@media screen and(max-width: 767px) {
-// 							display: flex;
-// 							flex-direction: column;
-// 					}
-// 				}
-// 			}
-// 		}
-// 		.footer_modal{
-// 			display: flex;
-// 			flex-direction: column;
-// 			button{
-//                 display: flex;
-// 			    align-items: center;
-// 			    justify-content: center;
-// 			    width: 30%;
-// 			    margin: 0 auto;	
-// 			    border: 2px solid #caba2e;
-// 			    background: #ffeb3b;
-// 			    width: 120px;
-// 			    padding: 12px 8px;
-// 			    border-radius: 26px;
-// 			}
-// 			span{
-// 				font-size: 8px;
-// 			    text-align: center;
-// 			    margin: 12px;
-// 			}
-// 		}
-
-// 	}
-// }
-
-// .modal_show{
-// 	display: block!important;
-// }
-// preferences
 .preferences{
 	    padding-top: 80px;
+	    @media screen  and(max-width:756px) {
+	    		margin: 0 12px;
+	    }
 	.header_logo{
 		text-align: center;
 		margin: 0 auto;
 	    line-height: 18px;
 	    text-transform: uppercase;
-	    font-size: 32px
+	    font-size: 32px;
+	    @media screen and (max-width: 440px) {
+	    	    font-size: 23px;
+	    }
+
 	}
 	.item_preferences{
 		display: flex;
 	    justify-content: center;
 	    align-items: center;
+	    @media screen and (max-width:656px ) {
+	    	flex-direction: column;
+	    	border-bottom: 1px solid #000000;
+	    	margin: 20px 0;
+	    }
 	    
 		.block_l{
 			.logo_item_span{
@@ -808,6 +782,12 @@ form{
 	.revers{
 		.item_preferences{
 		flex-direction: row-reverse;
+		@media screen and (max-width:656px ) {
+	    	flex-direction: column;
+	    	border-bottom: 1px solid #000000;
+	    	margin: 20px 0;
+	    }
 		}
 	}
 }
+
