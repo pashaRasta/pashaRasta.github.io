@@ -19,6 +19,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+// запретить браузеру выделять текст
+p,span,a,li{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -94,7 +100,8 @@ $color_dark_blue:#213047;
 	font-weight: bold;
 }
 .text_body{
-
+	line-height: 22px;
+    letter-spacing: 1.5px;
 }
 //header + menu
 .header_content{
@@ -138,7 +145,6 @@ $color_dark_blue:#213047;
     		.block_mail{
     			margin: 20px 0;
     		}
-
     	}
     }
 }
@@ -203,7 +209,6 @@ $color_dark_blue:#213047;
 	@media screen and(max-width: 420px) {
 		height: 220px;
 	}
-
 }
 .swiper-container{
 	height: 100%;
@@ -216,7 +221,6 @@ $color_dark_blue:#213047;
     	width: 70%;
     }
 }
-
 .swiper-slide{
 	margin-top: 55px;
 	padding-left: 2px;
@@ -238,14 +242,12 @@ $color_dark_blue:#213047;
 		margin-top: 32px;
 	}
 }
-
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
 	width: 100%;
     position: absolute;
     left: -41%;
     bottom: 5.5%;
     transform: scale(1.5);	
-
 	@media screen and (max-width: 1000px) {
 	        left: -37%;
 	}
@@ -276,9 +278,7 @@ $color_dark_blue:#213047;
 		    	}
 		    }
 		    span{ 
-		    	line-height: 22px;
 			    margin-top: 30px;
-			    letter-spacing: 1.5px;
 			    margin-bottom: 28px; 
 		    }
 		    button{	
@@ -295,7 +295,6 @@ $color_dark_blue:#213047;
 					    	transform: scale(-1, 1);
 					    	transition: 0.7s;
 						}
-
 			    }
 			    &:after{
 			    	content: "";
