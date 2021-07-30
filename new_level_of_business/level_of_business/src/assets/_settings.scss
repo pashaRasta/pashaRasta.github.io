@@ -1,0 +1,97 @@
+// scss reset
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+    display: block;
+}
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+a p span{
+	@media screen and (max-width: 640px) {
+			font-size: 12px;
+	}
+	font-size: 12px;
+}
+//   colors and vars
+$max_width:1200px;
+$color_white:#FFFFFF;
+$color_black:#000000;
+$color_costomRed:#e74c3c;
+
+//   mixins
+@mixin flexBox{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+//   other settings
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	// color: #2c3e50;
+	color: $color_white;
+	@include flexBox;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+  }
+
+//   content
+.wrapp_content{
+	width: 100%;
+	max-width: $max_width;
+	margin: 0 auto;
+}
+  .header_wrapp{
+	width: 100%;
+	max-width: $max_width;
+	margin: 0 auto;
+	@media screen and (max-width: 920px) {
+	  flex-direction: column;
+	  }
+  }
+//   
