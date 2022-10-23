@@ -1,1 +1,0 @@
-# pashaRasta.github.io
